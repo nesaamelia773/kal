@@ -463,3 +463,17 @@ Langkah 3: Hitung Invers
 $$A^{-1} = \frac{1}{-32} \begin{bmatrix} 16 & 16 & 16 & 16 \\ 16 & 16 & 16 & 16 \\ 16 & 16 & 16 & 16 \\ 16 & 16 & 16 & 16 \end{bmatrix} = \mathbf{\begin{bmatrix} -1/2 & -1/2 & -1/2 & -1/2 \\ -1/2 & -1/2 & -1/2 & -1/2 \\ -1/2 & -1/2 & -1/2 & -1/2 \\ -1/2 & -1/2 & -1/2 & -1/2 \end{bmatrix}}$$
 
 (Catatan: Khusus nomor 6, periksa kembali apakah ada elemen matriks yang tertulis salah di soal asli, karena invers dengan semua elemen sama biasanya menandakan matriks singular atau kasus khusus pada sistem persamaan linear).
+
+
+<iframe src="https://www.geogebra.org/classic/rkseuabx?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+
+1. Transformasi A ke B
+Titik A(2, 3) berpindah ke B(2, 1).Perubahan $x$: $2 - 2 = 0$Perubahan $y$: $1 - 3 = -2$Matriks Translasi:
+
+$$T = \begin{pmatrix} 0 \\ -2 \end{pmatrix}$$
+
+2. Transformasi B ke CTitik B(2, 1) berpindah ke C(4, 1).Perubahan $x$: $4 - 2 = 2$Perubahan $y$: $1 - 1 = 0$Matriks Translasi:$T = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$
+
+3. Transformasi D ke ETitik D(2, 4) berpindah ke E(2, 0).Perubahan $x$: $2 - 2 = 0$Perubahan $y$: $0 - 4 = -4$Matriks Translasi:$T = \begin{pmatrix} 0 \\ -4 \end{pmatrix}$
+
+4. Transformasi E ke FTitik E(2, 0) berpindah ke F(4, 0).Perubahan $x$: $4 - 2 = 2$Perubahan $y$: $0 - 0 = 0$Matriks Translasi:$T = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$
