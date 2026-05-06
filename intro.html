@@ -1,0 +1,1000 @@
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="./" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Materi KAL &#8212; My sample book</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=03e43079" />
+    <link rel="stylesheet" type="text/css" href="_static/styles/sphinx-book-theme.css?v=eba8b062" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css?v=9c3e77be" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css?v=76b2166b" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.8ecb98da25f57f5357bf6f572d296f466b2cfe2517ffebfabe82451661e28f02.css?v=6644e6bb" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css?v=4fa983c6" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-design.min.css?v=95c83b7e" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script src="_static/documentation_options.js?v=9eb32ce0"></script>
+    <script src="_static/doctools.js?v=9a2dae69"></script>
+    <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/clipboard.min.js?v=a7894cd8"></script>
+    <script src="_static/copybutton.js?v=f281be69"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?v=887ef09a"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js?v=1ae7504c"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="_static/design-tabs.js?v=f930bc37"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="_static/sphinx-thebe.js?v=c100c467"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'intro';</script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Markdown Files" href="markdown.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="#">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="_static/nesa.jpeg" class="logo__image only-light" alt="My sample book - Home"/>
+    <script>document.write(`<img src="_static/nesa.jpeg" class="logo__image only-dark" alt="My sample book - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1 current active">
+                <a class="reference internal" href="#">
+                    Materi KAL
+                </a>
+            </li>
+        </ul>
+        <ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="markdown.html">Markdown Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="notebooks.html">Content with notebooks</a></li>
+<li class="toctree-l1"><a class="reference internal" href="markdown-notebooks.html">Notebooks with MyST Markdown</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="_sources/intro.md" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.md</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Materi KAL</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi KAL</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-2-variabel">Untuk 2 variabel:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-3-variabel">Untuk 3 variabel:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-augmented">Matriks augmented</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-baris">Jumlah baris</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-gauss-jordan">Proses Gauss-Jordan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-rangkuman-sistem-persamaan-linier-tiga-variabel-spltv">A. Rangkuman Sistem Persamaan Linier Tiga Variabel (SPLTV)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-umum">Bentuk Umum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-augmented">Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-penyelesaian-dengan-eliminasi-gaussian">Langkah Penyelesaian dengan Eliminasi Gaussian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-kolom-pertama">1 Eliminasi Kolom Pertama</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-kolom-kedua">2 Eliminasi Kolom Kedua</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#substitusi-balik">3 Substitusi Balik</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan-spltv">Kesimpulan SPLTV</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b-rangkuman-sistem-persamaan-linier-empat-variabel">B. Rangkuman Sistem Persamaan Linier Empat Variabel</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Bentuk Umum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Langkah Penyelesaian dengan Eliminasi Gaussian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1  Eliminasi Kolom Pertama</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-kolom-kedua-dan-ketiga">22 Eliminasi Kolom Kedua dan Ketiga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3 Substitusi Balik</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan-spl-empat-variabel">Kesimpulan SPL Empat Variabel</a></li>
+</ul>
+</li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="materi-kal">
+<h1>Materi KAL<a class="headerlink" href="#materi-kal" title="Link to this heading">#</a></h1>
+<ol class="arabic simple">
+<li><p>Sistem Persamaan Linier (SPL)
+Definisi</p></li>
+</ol>
+<p>Sistem persamaan linier adalah kumpulan dua atau lebih persamaan linier yang memiliki variabel yang sama dan harus diselesaikan secara bersamaan.
+Artinya, kita mencari nilai variabel yang memenuhi semua persamaan sekaligus.</p>
+<p>Bentuk Umum SPL</p>
+<section id="untuk-2-variabel">
+<h2>Untuk 2 variabel:<a class="headerlink" href="#untuk-2-variabel" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(
+\begin{cases}
+a_1x + b_1y = c_1 \\
+a_2x + b_2y = c_2
+\end{cases}
+\)</span></p>
+</section>
+<section id="untuk-3-variabel">
+<h2>Untuk 3 variabel:<a class="headerlink" href="#untuk-3-variabel" title="Link to this heading">#</a></h2>
+<p><span class="math notranslate nohighlight">\(
+\begin{cases}
+a_1x + b_1y + c_1z = d_1 \\
+a_2x + b_2y + c_2z = d_2 \\
+a_3x + b_3y + c_3z = d_3
+\end{cases}
+\)</span></p>
+<p>Jenis Solusi SPL</p>
+<ol class="arabic simple">
+<li><p><strong>Solusi Tunggal (unik)</strong> → satu titik potong<br />
+$<span class="math notranslate nohighlight">\(
+\text{Dua garis berpotongan di satu titik}
+\)</span>$</p></li>
+<li><p><strong>Tak hingga solusi</strong> → garis berhimpit<br />
+$<span class="math notranslate nohighlight">\(
+\text{Kedua persamaan merepresentasikan garis yang sama}
+\)</span>$</p></li>
+<li><p><strong>Tidak ada solusi</strong> → garis sejajar<br />
+$<span class="math notranslate nohighlight">\(
+\text{Dua garis sejajar dan tidak pernah berpotongan}
+\)</span>$</p></li>
+</ol>
+<p>Solusi Tunggal (unik) → satu titik potong</p>
+<p>Tak hingga solusi → garis berhimpit</p>
+<p>Tidak ada solusi → garis sejajar</p>
+<ol class="arabic simple" start="3">
+<li><p>Kode Python (Metode Gauss-Jordan)</p></li>
+</ol>
+<p>Berikut contoh menggunakan NumPy:
+import numpy as np</p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="matriks-augmented">
+<h1>Matriks augmented<a class="headerlink" href="#matriks-augmented" title="Link to this heading">#</a></h1>
+<p>A = np.array([
+[2, 1, 5],
+[1, -1, 1]
+], dtype=float)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="jumlah-baris">
+<h1>Jumlah baris<a class="headerlink" href="#jumlah-baris" title="Link to this heading">#</a></h1>
+<p>n = len(A)</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="proses-gauss-jordan">
+<h1>Proses Gauss-Jordan<a class="headerlink" href="#proses-gauss-jordan" title="Link to this heading">#</a></h1>
+<p>for i in range(n):
+# Membuat pivot = 1
+A[i] = A[i] / A[i][i]</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span># Mengeliminasi baris lain
+for j in range(n):
+    if i != j:
+        A[j] = A[j] - A[j][i] * A[i]
+</pre></div>
+</div>
+<p>print(“Matriks hasil:”)
+print(A)</p>
+<p>print(“Solusi:”)
+print(“x =”, A[0][2])
+print(“y =”, A[1][2])</p>
+<ol class="arabic simple" start="4">
+<li><p>Penjelasan Geometri SPL
+SPL Dua Variabel (2D)</p></li>
+</ol>
+<p>Persamaan linier dua variabel merepresentasikan garis lurus.</p>
+<p>Contoh:</p>
+<p><span class="math notranslate nohighlight">\(
+2x + y = 5
+\)</span></p>
+<p><span class="math notranslate nohighlight">\(
+x - y = 1
+\)</span></p>
+<ol class="arabic simple" start="5">
+<li><p>Penjelasan Menggunakan GeoGebra
+Langkah di GeoGebra (2D)</p></li>
+</ol>
+<p>&lt;<iframe src="https://www.geogebra.org/calculator/kgqyqtma?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe></p>
+<p>Pengertian Sistem Persamaan Linier</p>
+<p>Sistem Persamaan Linier (SPL) adalah kumpulan beberapa persamaan linier yang memiliki variabel yang sama dan dicari penyelesaiannya secara bersamaan.</p>
+<p>SPLTV → 3 variabel (misal: x, y, z)</p>
+<p>SPL 4 variabel → 4 variabel (misal: x, y, z, w)</p>
+<p>Tujuannya adalah mencari nilai masing-masing variabel yang memenuhi semua persamaan.</p>
+<p>Pengertian Metode Eliminasi Gaussian</p>
+<p>Eliminasi Gaussian adalah metode penyelesaian SPL dengan cara:</p>
+<p>Mengubah sistem persamaan menjadi bentuk matriks augmented</p>
+<p>Melakukan operasi baris elementer</p>
+<p>Mengubah matriks menjadi bentuk segitiga atas</p>
+<p>Menentukan solusi dengan substitusi balik</p>
+<p>Operasi Baris Elementer (OBE)</p>
+<p>Dalam eliminasi Gaussian digunakan tiga operasi dasar:</p>
+<p>Menukar dua baris</p>
+<p>Mengalikan baris dengan konstanta ≠ 0</p>
+<p>Menjumlahkan atau mengurangkan baris dengan kelipatan baris lain</p>
+<p>Tujuan operasi ini adalah membuat elemen di bawah diagonal utama menjadi nol.</p>
+<p>A. Rangkuman SPL Tiga Variabel (SPLTV)
+Bentuk Umum:</p>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="a-rangkuman-sistem-persamaan-linier-tiga-variabel-spltv">
+<h1>A. Rangkuman Sistem Persamaan Linier Tiga Variabel (SPLTV)<a class="headerlink" href="#a-rangkuman-sistem-persamaan-linier-tiga-variabel-spltv" title="Link to this heading">#</a></h1>
+<section id="bentuk-umum">
+<h2>Bentuk Umum<a class="headerlink" href="#bentuk-umum" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+a_1x + b_1y + c_1z = d_1 \\
+a_2x + b_2y + c_2z = d_2 \\
+a_3x + b_3y + c_3z = d_3
+\end{cases}
+\end{split}\]</div>
+<p>Sistem Persamaan Linier Tiga Variabel (SPLTV) adalah sistem yang terdiri dari tiga persamaan linier dengan tiga variabel yang dicari secara bersamaan.</p>
+</section>
+<hr class="docutils" />
+<section id="bentuk-matriks-augmented">
+<h2>Bentuk Matriks Augmented<a class="headerlink" href="#bentuk-matriks-augmented" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+a_1 &amp; b_1 &amp; c_1 &amp; d_1 \\
+a_2 &amp; b_2 &amp; c_2 &amp; d_2 \\
+a_3 &amp; b_3 &amp; c_3 &amp; d_3
+\end{array}
+\right]
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="langkah-penyelesaian-dengan-eliminasi-gaussian">
+<h2>Langkah Penyelesaian dengan Eliminasi Gaussian<a class="headerlink" href="#langkah-penyelesaian-dengan-eliminasi-gaussian" title="Link to this heading">#</a></h2>
+<section id="eliminasi-kolom-pertama">
+<h3>1 Eliminasi Kolom Pertama<a class="headerlink" href="#eliminasi-kolom-pertama" title="Link to this heading">#</a></h3>
+<p>Gunakan operasi baris elementer untuk membuat elemen di bawah pivot pertama menjadi nol.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+* &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; *
+\end{array}
+\right]
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="eliminasi-kolom-kedua">
+<h3>2 Eliminasi Kolom Kedua<a class="headerlink" href="#eliminasi-kolom-kedua" title="Link to this heading">#</a></h3>
+<p>Nolkan elemen di bawah pivot kedua sehingga diperoleh bentuk segitiga atas.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{ccc|c}
+* &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; * \\
+0 &amp; 0 &amp; * &amp; *
+\end{array}
+\right]
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="substitusi-balik">
+<h3>3 Substitusi Balik<a class="headerlink" href="#substitusi-balik" title="Link to this heading">#</a></h3>
+<p>Jika diperoleh bentuk:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+a z &amp;= k \\
+b y + c z &amp;= m \\
+x + d y + e z &amp;= n
+\end{aligned}
+\end{split}\]</div>
+<p>Langkah penyelesaian:</p>
+<ul class="simple">
+<li><p>Tentukan nilai <span class="math notranslate nohighlight">\(z\)</span></p></li>
+<li><p>Substitusikan ke persamaan kedua untuk mencari <span class="math notranslate nohighlight">\(y\)</span></p></li>
+<li><p>Substitusikan ke persamaan pertama untuk mencari <span class="math notranslate nohighlight">\(x\)</span></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan-spltv">
+<h2>Kesimpulan SPLTV<a class="headerlink" href="#kesimpulan-spltv" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Jika diperoleh satu solusi → sistem konsisten (solusi tunggal)</p></li>
+<li><p>Jika tidak ada solusi → sistem tidak konsisten</p></li>
+<li><p>Jika solusi tak hingga → sistem konsisten dependen</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section class="tex2jax_ignore mathjax_ignore" id="b-rangkuman-sistem-persamaan-linier-empat-variabel">
+<h1>B. Rangkuman Sistem Persamaan Linier Empat Variabel<a class="headerlink" href="#b-rangkuman-sistem-persamaan-linier-empat-variabel" title="Link to this heading">#</a></h1>
+<section id="id1">
+<h2>Bentuk Umum<a class="headerlink" href="#id1" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{cases}
+a_1x + b_1y + c_1z + d_1w = e_1 \\
+a_2x + b_2y + c_2z + d_2w = e_2 \\
+a_3x + b_3y + c_3z + d_3w = e_3 \\
+a_4x + b_4y + c_4z + d_4w = e_4
+\end{cases}
+\end{split}\]</div>
+<p>Sistem ini terdiri dari empat persamaan linier dengan empat variabel yang diselesaikan menggunakan metode eliminasi Gaussian.</p>
+</section>
+<hr class="docutils" />
+<section id="id2">
+<h2>Bentuk Matriks Augmented<a class="headerlink" href="#id2" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{cccc|c}
+a_1 &amp; b_1 &amp; c_1 &amp; d_1 &amp; e_1 \\
+a_2 &amp; b_2 &amp; c_2 &amp; d_2 &amp; e_2 \\
+a_3 &amp; b_3 &amp; c_3 &amp; d_3 &amp; e_3 \\
+a_4 &amp; b_4 &amp; c_4 &amp; d_4 &amp; e_4
+\end{array}
+\right]
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id3">
+<h2>Langkah Penyelesaian dengan Eliminasi Gaussian<a class="headerlink" href="#id3" title="Link to this heading">#</a></h2>
+<section id="id4">
+<h3>1  Eliminasi Kolom Pertama<a class="headerlink" href="#id4" title="Link to this heading">#</a></h3>
+<p>Buat semua elemen di bawah pivot pertama menjadi nol.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{cccc|c}
+* &amp; * &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; * &amp; *
+\end{array}
+\right]
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="eliminasi-kolom-kedua-dan-ketiga">
+<h3>22 Eliminasi Kolom Kedua dan Ketiga<a class="headerlink" href="#eliminasi-kolom-kedua-dan-ketiga" title="Link to this heading">#</a></h3>
+<p>Lanjutkan proses eliminasi hingga diperoleh bentuk segitiga atas.</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\left[
+\begin{array}{cccc|c}
+* &amp; * &amp; * &amp; * &amp; * \\
+0 &amp; * &amp; * &amp; * &amp; * \\
+0 &amp; 0 &amp; * &amp; * &amp; * \\
+0 &amp; 0 &amp; 0 &amp; * &amp; *
+\end{array}
+\right]
+\end{split}\]</div>
+</section>
+<hr class="docutils" />
+<section id="id5">
+<h3>3 Substitusi Balik<a class="headerlink" href="#id5" title="Link to this heading">#</a></h3>
+<p>Jika diperoleh bentuk:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{aligned}
+a w &amp;= p \\
+b z + c w &amp;= q \\
+d y + e z + f w &amp;= r \\
+x + g y + h z + i w &amp;= s
+\end{aligned}
+\end{split}\]</div>
+<p>Langkah penyelesaian:</p>
+<ul class="simple">
+<li><p>Tentukan <span class="math notranslate nohighlight">\(w\)</span></p></li>
+<li><p>Substitusikan untuk mencari <span class="math notranslate nohighlight">\(z\)</span></p></li>
+<li><p>Substitusikan untuk mencari <span class="math notranslate nohighlight">\(y\)</span></p></li>
+<li><p>Terakhir tentukan <span class="math notranslate nohighlight">\(x\)</span></p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="kesimpulan-spl-empat-variabel">
+<h2>Kesimpulan SPL Empat Variabel<a class="headerlink" href="#kesimpulan-spl-empat-variabel" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p>Menggunakan operasi baris elementer</p></li>
+<li><p>Diubah ke bentuk segitiga atas</p></li>
+<li><p>Diselesaikan dengan substitusi balik</p></li>
+<li><p>Prinsipnya sama dengan SPLTV, tetapi lebih banyak tahap eliminasi</p></li>
+</ul>
+<p>SOAL.</p>
+<p>A. Hitunglah determinan matrik berikut dengan menggunakan rumus expansi baris</p>
+<div class="math notranslate nohighlight">
+\[\det(A) = \sum_{k=1}^{n} (-1)^{i+k} a_{ik} M_{ik}\]</div>
+<p>di mana <span class="math notranslate nohighlight">\(M_{ik}\)</span> adalah minor (determinan submatriks setelah menghapus baris i dan kolom k).</p>
+<ol class="arabic simple">
+<li><p>Matriks <span class="math notranslate nohighlight">\(2 \times 2\)</span>
+$<span class="math notranslate nohighlight">\(A = \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}\)</span>$</p></li>
+</ol>
+<p>Langkah Penyelesaian (Ekpansi Baris 1):</p>
+<div class="math notranslate nohighlight">
+\[a_{11} = -7, M_{11} = |4| = 4\]</div>
+<div class="math notranslate nohighlight">
+\[a_{12} = -5, M_{12} = |1| = 1\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = (-1)^{1+1}(-7)(4) + (-1)^{1+2}(-5)(1)\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = (1)(-28) + (-1)(-5)\]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = -28 + 5 = \mathbf{-23}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Matriks 3 <span class="math notranslate nohighlight">\(\times 3\)</span></p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+<p>Langkah Penyelesaian (Ekspansi Baris 3 - Paling Efisien):
+Kita pilih baris ke-3 karena memiliki banyak elemen nol.</p>
+<div class="math notranslate nohighlight">
+\[a_{31} = 0\]</div>
+<div class="math notranslate nohighlight">
+\[a_{32} = 0\]</div>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}a_{33} = 1, M_{33} = \begin{vmatrix} 0 &amp; 2 \\ 1 &amp; -2 \end{vmatrix}$ = (0)(-2) - (2)(1) = -2\end{split}\\$\det(A) = 0 + 0 + (-1)^{3+3}(1)(-2)\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = (1)(1)(-2) = \mathbf{-2}\]</div>
+<ol class="arabic simple" start="3">
+<li><p>Matriks <span class="math notranslate nohighlight">\(4 \times 4\)</span></p></li>
+</ol>
+<p>Langkah Penyelesaian (Ekspansi Baris 1):</p>
+<p><span class="math notranslate nohighlight">\(\det(A) = 1 \cdot M_{11} - (-3) \cdot M_{12} + 1 \cdot M_{13} - 1 \cdot M_{14}\)</span></p>
+<p><span class="math notranslate nohighlight">\(M_{11} = \begin{vmatrix} 1 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}\)</span> = 1(9-1) - 1(-3-1) + 1(1+3) = 8 + 4 + 4 = 16</p>
+<div class="math notranslate nohighlight">
+\[ \begin{align}\begin{aligned}\begin{split}M_{12} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}$$ = -3(9-1) - 1(-3-1) + 1(1+3) = -24 + 4 + 4 = -16\end{split}\\\begin{split}$M_{13} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 \end{vmatrix}$ = -3(-3-1) - 1(-3-1) + 1(1-1) = 12 + 4 + 0 = 16\end{split}\\\begin{split}$M_{14} = \begin{vmatrix} -3 &amp; 1 &amp; 1 \\ 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 \end{vmatrix}$ = -3(-3-1) - 1(1-1) + 1(1+3) = 12 - 0 + 4 = 16\end{split}\\Substitusi Kembali:\\$\det(A) = 1(16) + 3(-16) + 1(16) - 1(16)$\\$$\det(A) = 16 - 48 + 16 - 16\end{aligned}\end{align} \]</div>
+<div class="math notranslate nohighlight">
+\[\det(A) = \mathbf{-32}\]</div>
+<p>B. Gunakan rumus matriks adjoin untuk menghitung invers dari matriks berikut dengan rumus</p>
+<div class="math notranslate nohighlight">
+\[A^{-1} = \frac{1}{\det A} \text{adj } A\]</div>
+<p>Dimana elemen adjoin $<span class="math notranslate nohighlight">\((\text{adj } A)_{ij} = (-1)^{i+j} M_{ji}\)</span><span class="math notranslate nohighlight">\( (transpose dari matriks kofaktor).
+4. Matriks \)</span><span class="math notranslate nohighlight">\(2 \times 2\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} -7 &amp; -5 \\ 1 &amp; 4 \end{bmatrix}\end{split}\]</div>
+<p>Langkah 1: Hitung Determinan</p>
+<div class="math notranslate nohighlight">
+\[\det(A) = (-7)(4) - (-5)(1) = -28 + 5 = -23\]</div>
+<p>Langkah 2: Cari Matriks Adjoin
+Untuk matriks $<span class="math notranslate nohighlight">\(2 \times 2\)</span>$, adjoin didapat dengan menukar elemen diagonal utama dan mengubah tanda diagonal sekunder:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{adj } A = \begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix}\end{split}\]</div>
+<p>Hitung Invers</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^{-1} = \frac{1}{-23} \begin{bmatrix} 4 &amp; 5 \\ -1 &amp; -7 \end{bmatrix}$$= \mathbf{\begin{bmatrix} -4/23 &amp; -5/23 \\ 1/23 &amp; 7/23 \end{bmatrix}}\end{split}\]</div>
+<ol class="arabic simple" start="5">
+<li><p>Matriks $<span class="math notranslate nohighlight">\(3 \times 3\)</span>$</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 0 &amp; 2 &amp; -3 \\ 1 &amp; -2 &amp; -1 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}\end{split}\]</div>
+<p>Langkah 1: Hitung Determinan
+(Dari soal sebelumnya): $<span class="math notranslate nohighlight">\(\det(A) = -2\)</span><span class="math notranslate nohighlight">\(
+Langkah 2: Cari Matriks Kofaktor \)</span><span class="math notranslate nohighlight">\((C_{ij})\)</span>$</p>
+<div class="math notranslate nohighlight">
+\[C_{11} = +|(-2)(1) - (0)(-1)| = -2\]</div>
+<div class="math notranslate nohighlight">
+\[C_{12} = -|(1)(1) - (0)(-1)| = -1\]</div>
+<div class="math notranslate nohighlight">
+\[C_{13} = +|(1)(0) - (0)(-2)| = 0\]</div>
+<div class="math notranslate nohighlight">
+\[C_{21} = -|(2)(1) - (0)(-3)| = -2\]</div>
+<div class="math notranslate nohighlight">
+\[C_{22} = +|(0)(1) - (0)(-3)| = 0\]</div>
+<div class="math notranslate nohighlight">
+\[C_{23} = -|(0)(0) - (0)(2)| = 0\]</div>
+<div class="math notranslate nohighlight">
+\[C_{31} = +|(2)(-1) - (-2)(-3)| = -8\]</div>
+<div class="math notranslate nohighlight">
+\[C_{32} = -|(0)(-1) - (1)(-3)| = -3\]</div>
+<div class="math notranslate nohighlight">
+\[C_{33} = +|(0)(-2) - (1)(2)| = -2\]</div>
+<p>Langkah 3: Adjoin (Transpose Kofaktor) &amp; Invers</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{adj } A = \begin{bmatrix} -2 &amp; -2 &amp; -8 \\ -1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; -2 \end{bmatrix}\end{split}\]</div>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^{-1} = \frac{1}{-2} \begin{bmatrix} -2 &amp; -2 &amp; -8 \\ -1 &amp; 0 &amp; -3 \\ 0 &amp; 0 &amp; -2 \end{bmatrix} = \mathbf{\begin{bmatrix} 1 &amp; 1 &amp; 4 \\ 1/2 &amp; 0 &amp; 3/2 \\ 0 &amp; 0 &amp; 1 \end{bmatrix}}\end{split}\]</div>
+<ol class="arabic simple" start="6">
+<li><p>Matriks $<span class="math notranslate nohighlight">\(4 \times 4\)</span>$</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 1 &amp; -3 &amp; 1 &amp; 1 \\ -3 &amp; 1 &amp; 1 &amp; 1 \\ 1 &amp; 1 &amp; -3 &amp; 1 \\ 1 &amp; 1 &amp; 1 &amp; -3 \end{bmatrix}\end{split}\]</div>
+<p>Langkah 1: Hitungxlumnya): $<span class="math notranslate nohighlight">\(\det(A) = -32\)</span><span class="math notranslate nohighlight">\(
+Langkah 2: Analisis Simetri
+Karena matriks ini memiliki pola simetris yang unik, kofaktor antar elemen diagonal akan sama, dan elemen non-diagonal juga akan memiliki pola yang sama.
+Elemen diagonal \)</span><span class="math notranslate nohighlight">\((C_{ii}): M_{11} = 16, maka C_{11} = (-1)^{1+1}(16) = 16\)</span><span class="math notranslate nohighlight">\(
+Elemen non-diagonal \)</span><span class="math notranslate nohighlight">\((C_{ij}): M_{12} = -16, maka C_{12} = (-1)^{1+2}(-16) = 16\)</span>$
+Setelah menghitung seluruh elemen, matriks Adjoin-nya adalah:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\text{adj } A = \begin{bmatrix} 16 &amp; 16 &amp; 16 &amp; 16 \\ 16 &amp; 16 &amp; 16 &amp; 16 \\ 16 &amp; 16 &amp; 16 &amp; 16 \\ 16 &amp; 16 &amp; 16 &amp; 16 \end{bmatrix} \text{ (Setelah penyesuaian tanda kofaktor)}\end{split}\]</div>
+<p>Catatan khusus: Untuk matriks nomor 6, semua elemen kofaktor bernilai 16 karena struktur angka -3 yang bergeser.</p>
+<p>Langkah 3: Hitung Invers</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^{-1} = \frac{1}{-32} \begin{bmatrix} 16 &amp; 16 &amp; 16 &amp; 16 \\ 16 &amp; 16 &amp; 16 &amp; 16 \\ 16 &amp; 16 &amp; 16 &amp; 16 \\ 16 &amp; 16 &amp; 16 &amp; 16 \end{bmatrix} = \mathbf{\begin{bmatrix} -1/2 &amp; -1/2 &amp; -1/2 &amp; -1/2 \\ -1/2 &amp; -1/2 &amp; -1/2 &amp; -1/2 \\ -1/2 &amp; -1/2 &amp; -1/2 &amp; -1/2 \\ -1/2 &amp; -1/2 &amp; -1/2 &amp; -1/2 \end{bmatrix}}\end{split}\]</div>
+<p>(Catatan: Khusus nomor 6, periksa kembali apakah ada elemen matriks yang tertulis salah di soal asli, karena invers dengan semua elemen sama biasanya menandakan matriks singular atau kasus khusus pada sistem persamaan linear).</p>
+<iframe src="https://www.geogebra.org/classic/rkseuabx?embed" width="800" height="600" allowfullscreen style="border: 1px solid #e4e4e4;border-radius: 4px;" frameborder="0"></iframe>
+<ol class="arabic simple">
+<li><p>Transformasi A ke B
+Titik A(2, 3) berpindah ke B(2, 1).Perubahan <span class="math notranslate nohighlight">\(x\)</span>: <span class="math notranslate nohighlight">\(2 - 2 = 0\)</span>Perubahan <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(1 - 3 = -2\)</span>Matriks Translasi:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}T = \begin{pmatrix} 0 \\ -2 \end{pmatrix}\end{split}\]</div>
+<ol class="arabic simple" start="2">
+<li><p>Transformasi B ke CTitik B(2, 1) berpindah ke C(4, 1).Perubahan <span class="math notranslate nohighlight">\(x\)</span>: <span class="math notranslate nohighlight">\(4 - 2 = 2\)</span>Perubahan <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(1 - 1 = 0\)</span>Matriks Translasi:<span class="math notranslate nohighlight">\(T = \begin{pmatrix} 2 \\ 0 \end{pmatrix}\)</span></p></li>
+<li><p>Transformasi D ke ETitik D(2, 4) berpindah ke E(2, 0).Perubahan <span class="math notranslate nohighlight">\(x\)</span>: <span class="math notranslate nohighlight">\(2 - 2 = 0\)</span>Perubahan <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(0 - 4 = -4\)</span>Matriks Translasi:<span class="math notranslate nohighlight">\(T = \begin{pmatrix} 0 \\ -4 \end{pmatrix}\)</span></p></li>
+<li><p>Transformasi E ke FTitik E(2, 0) berpindah ke F(4, 0).Perubahan <span class="math notranslate nohighlight">\(x\)</span>: <span class="math notranslate nohighlight">\(4 - 2 = 2\)</span>Perubahan <span class="math notranslate nohighlight">\(y\)</span>: <span class="math notranslate nohighlight">\(0 - 0 = 0\)</span>Matriks Translasi:<span class="math notranslate nohighlight">\(T = \begin{pmatrix} 2 \\ 0 \end{pmatrix}\)</span></p></li>
+</ol>
+</section>
+<div class="toctree-wrapper compound">
+</div>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="right-next"
+       href="markdown.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Markdown Files</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Materi KAL</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-2-variabel">Untuk 2 variabel:</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#untuk-3-variabel">Untuk 3 variabel:</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#matriks-augmented">Matriks augmented</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#jumlah-baris">Jumlah baris</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#proses-gauss-jordan">Proses Gauss-Jordan</a></li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-rangkuman-sistem-persamaan-linier-tiga-variabel-spltv">A. Rangkuman Sistem Persamaan Linier Tiga Variabel (SPLTV)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-umum">Bentuk Umum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#bentuk-matriks-augmented">Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#langkah-penyelesaian-dengan-eliminasi-gaussian">Langkah Penyelesaian dengan Eliminasi Gaussian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-kolom-pertama">1 Eliminasi Kolom Pertama</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-kolom-kedua">2 Eliminasi Kolom Kedua</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#substitusi-balik">3 Substitusi Balik</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan-spltv">Kesimpulan SPLTV</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b-rangkuman-sistem-persamaan-linier-empat-variabel">B. Rangkuman Sistem Persamaan Linier Empat Variabel</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Bentuk Umum</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id2">Bentuk Matriks Augmented</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id3">Langkah Penyelesaian dengan Eliminasi Gaussian</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id4">1  Eliminasi Kolom Pertama</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#eliminasi-kolom-kedua-dan-ketiga">22 Eliminasi Kolom Kedua dan Ketiga</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id5">3 Substitusi Balik</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan-spl-empat-variabel">Kesimpulan SPL Empat Variabel</a></li>
+</ul>
+</li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By The Jupyter Book Community
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  <p class="copyright">
+    
+      © Copyright 2023.
+      <br/>
+    
+  </p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
