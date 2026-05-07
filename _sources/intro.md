@@ -477,3 +477,77 @@ $$T = \begin{pmatrix} 0 \\ -2 \end{pmatrix}$$
 3. Transformasi D ke ETitik D(2, 4) berpindah ke E(2, 0).Perubahan $x$: $2 - 2 = 0$Perubahan $y$: $0 - 4 = -4$Matriks Translasi:$T = \begin{pmatrix} 0 \\ -4 \end{pmatrix}$
 
 4. Transformasi E ke FTitik E(2, 0) berpindah ke F(4, 0).Perubahan $x$: $4 - 2 = 2$Perubahan $y$: $0 - 0 = 0$Matriks Translasi:$T = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$
+
+##Matrik Transformasi
+
+```
+import matplotlib.pyplot as plt
+import matplotlib.animation as animation
+from IPython.display import HTML
+
+# 1. Definisikan Titik
+points = {
+    "A": (2, 3), "B": (2, 4), "C": (3, 4), "D": (3, 3),
+    "E": (2, -3), "F": (3, -3), "G": (2, -4), "H": (3, -4),
+    "I": (2, 2), "J": (3, 2), "K": (2, 1), "L": (3, 1),
+    "M": (2, -1), "N": (3, -1), "O": (2, -2), "P": (3, -2)
+}
+
+# 2. Definisikan Garis
+garis = [
+    ("B", "C"), ("A", "D"), ("I", "J"), ("K", "L"),
+    ("M", "N"), ("O", "P"), ("E", "F"), ("H", "G"),
+    ("B", "A"), ("A", "I"), ("I", "K"), ("C", "D"),
+    ("D", "J"), ("J", "L"), ("M", "O"), ("O", "E"),
+    ("N", "P"), ("P", "F")
+]
+
+# 3. Setup Figure
+fig, ax = plt.subplots(figsize=(6, 8))
+
+# 4. Fungsi Update untuk Animasi
+def update(frame):
+    ax.clear()
+    scale_y = 1 - frame / 100
+    posisi_baru = {}
+
+    # Gambar Titik
+    for nama, (x, y) in points.items():
+        y_baru = y * scale_y
+        posisi_baru[nama] = (x, y_baru)
+        ax.scatter(x, y_baru, color="blue", s=100)
+        ax.text(x + 0.05, y_baru + 0.05, nama, fontsize=12)
+
+    # Gambar Garis
+    for p1, p2 in garis:
+        x1, y1 = posisi_baru[p1]
+        x2, y2 = posisi_baru[p2]
+        ax.plot([x1, x2], [y1, y2], color="red", linewidth=2)
+
+    # Dekorasi Grafik
+    ax.axhline(0, color="black", linewidth=2)
+    ax.axvline(0, color="black", linewidth=2)
+    ax.set_xlim(0, 5)
+    ax.set_ylim(-5, 5)
+    ax.grid(True)
+    ax.set_title("Transformasi Titik Mendekati Sumbu X")
+
+# 5. Membuat Animasi
+ani = animation.FuncAnimation(
+    fig, update, frames=101, interval=50, repeat=True
+)
+
+# 6. SIMPAN JADI GIF (Agar bisa didownload)
+# Gunakan writer 'pillow' agar kompatibel di Colab
+print("Sedang memproses penyimpanan GIF... mohon tunggu sebentar.")
+ani.save('animasi_transformasi.gif', writer='pillow', fps=20)
+print("Selesai! Cek folder di sebelah kiri untuk mendownload 'animasi_transformasi.gif'")
+
+# 7. Tampilkan di Colab
+HTML(ani.to_jshtml())
+
+from google.colab import files
+files.download('animasi_transformasi.gif')
+```
+
+![Deskripsi Animasi](_static/animasi_saya.gif)
