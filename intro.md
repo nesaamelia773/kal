@@ -478,7 +478,7 @@ $$T = \begin{pmatrix} 0 \\ -2 \end{pmatrix}$$
 
 4. Transformasi E ke FTitik E(2, 0) berpindah ke F(4, 0).Perubahan $x$: $4 - 2 = 2$Perubahan $y$: $0 - 0 = 0$Matriks Translasi:$T = \begin{pmatrix} 2 \\ 0 \end{pmatrix}$
 
-##Matrik Transformasi
+## Matrik Transformasi
 
 ```
 import matplotlib.pyplot as plt
@@ -551,3 +551,14 @@ files.download('animasi_transformasi.gif')
 ```
 
 ![Deskripsi Animasi](_static/animasi_saya.gif)
+
+Dekomposisi Matrik
+
+## Foto 1
+![Foto 1](_static/foto1.jpeg)
+
+## Foto 2
+![Foto 2](_static/foto2.jpeg)
+
+## Foto 3
+![Foto 3](_static/foto3.jpeg)
