@@ -643,3 +643,4 @@ A = U \Sigma V^T
 \]
 
 Sehingga informasi pada matriks awal tetap dipertahankan meskipun telah diuraikan ke dalam bentuk yang lebih sederhana. Metode ini sangat bermanfaat dalam berbagai bidang seperti machine learning, analisis data, kompresi citra, dan pemrosesan sinyal karena mampu menyederhanakan struktur data tanpa kehilangan informasi yang signifikan.s
+---
