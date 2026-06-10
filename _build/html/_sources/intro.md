@@ -29,19 +29,19 @@ $
 Jenis Solusi SPL
 
 1. **Solusi Tunggal (unik)** → satu titik potong  
-   $$
+   $
    \text{Dua garis berpotongan di satu titik}
-   $$
+   $
 
 2. **Tak hingga solusi** → garis berhimpit  
-   $$
+   $
    \text{Kedua persamaan merepresentasikan garis yang sama}
-   $$
+   $
 
 3. **Tidak ada solusi** → garis sejajar  
-   $$
+   $
    \text{Dua garis sejajar dan tidak pernah berpotongan}
-   $$
+   $
 
 Solusi Tunggal (unik) → satu titik potong
 
@@ -562,3 +562,84 @@ Dekomposisi Matrik
 
 ## Foto 3
 ![Foto 3](_static/foto3.jpeg)
+
+
+# Singular Value Decomposition (SVD)
+
+## Pengertian
+
+Singular Value Decomposition (SVD) adalah salah satu metode dekomposisi matriks dalam aljabar linear yang digunakan untuk menguraikan sebuah matriks menjadi tiga komponen utama yang lebih sederhana. Metode ini memungkinkan suatu matriks direpresentasikan dalam bentuk yang lebih mudah dianalisis, dipahami, dan diproses tanpa kehilangan informasi penting yang terkandung di dalamnya.
+
+Secara matematis, jika terdapat matriks \(A\) berukuran \(m \times n\), maka matriks tersebut dapat didekomposisi menjadi:
+
+\[
+A = U \Sigma V^T
+\]
+
+dengan:
+
+- \(U\) = matriks vektor singular kiri (left singular vectors)
+- \(\Sigma\) = matriks diagonal yang berisi nilai singular (singular values)
+- \(V^T\) = transpose dari matriks vektor singular kanan (right singular vectors)
+
+Nilai-nilai singular yang terdapat pada matriks \(\Sigma\) menunjukkan tingkat kontribusi masing-masing komponen terhadap struktur data pada matriks asal. Semakin besar nilai singular yang dimiliki suatu komponen, semakin besar pula pengaruhnya dalam merepresentasikan informasi yang terdapat pada matriks tersebut. Oleh karena itu, dalam beberapa aplikasi hanya nilai singular terbesar yang dipertahankan untuk mengurangi kompleksitas data tanpa menghilangkan informasi yang paling penting.
+
+SVD memiliki keunggulan karena dapat diterapkan pada berbagai jenis matriks, baik matriks persegi maupun matriks non-persegi. Selain itu, metode ini dikenal memiliki stabilitas numerik yang baik sehingga sering digunakan dalam komputasi ilmiah dan analisis data berskala besar.
+
+Dalam bidang ilmu data dan machine learning, SVD banyak dimanfaatkan untuk reduksi dimensi (dimensionality reduction), ekstraksi fitur, analisis data multivariat, dan sistem rekomendasi. Pada pengolahan citra digital, SVD dapat digunakan untuk melakukan kompresi gambar dengan mempertahankan komponen-komponen utama yang paling berpengaruh sehingga ukuran data dapat diperkecil tanpa mengurangi kualitas gambar secara signifikan. Selain itu, SVD juga digunakan dalam pemrosesan bahasa alami (Natural Language Processing), pengenalan pola, serta berbagai aplikasi statistik dan optimasi.
+
+Karena kemampuannya dalam menyederhanakan struktur matriks dan mempertahankan informasi yang penting, Singular Value Decomposition menjadi salah satu teknik fundamental yang banyak digunakan dalam berbagai bidang matematika terapan, ilmu komputer, dan analisis data modern.
+
+## Contoh Matriks
+
+Misalkan diberikan matriks:
+
+$$
+A=
+\begin{bmatrix}
+4 & 2 & 1\\
+1 & 3 & 2\\
+2 & 1 & 5
+\end{bmatrix}
+$$
+
+Matriks tersebut akan didekomposisi menjadi \(U\), \(\Sigma\), dan \(V^T\).
+
+## Implementasi dengan SageMathCell
+
+```{raw} html
+<script src="https://sagecell.sagemath.org/static/embedded_sagecell.js"></script>
+
+<div id="mycell">
+<script type="text/x-sage">
+import numpy as np
+
+A = np.array([[4,2,1],
+              [1,3,2],
+              [2,1,5]])
+
+U, S, VT = np.linalg.svd(A)
+
+print(U)
+print(S)
+print(VT)
+</script>
+</div>
+
+<script>
+sagecell.makeSagecell({
+    inputLocation: "#mycell"
+});
+</script>
+```
+
+
+## Kesimpulan
+
+Hasil dekomposisi SVD menghasilkan tiga matriks, yaitu \(U\), \(\Sigma\), dan \(V^T\). Ketiga matriks tersebut dapat digunakan untuk merekonstruksi kembali matriks awal melalui operasi:
+
+\[
+A = U \Sigma V^T
+\]
+
+Sehingga informasi pada matriks awal tetap dipertahankan meskipun telah diuraikan ke dalam bentuk yang lebih sederhana. Metode ini sangat bermanfaat dalam berbagai bidang seperti machine learning, analisis data, kompresi citra, dan pemrosesan sinyal karena mampu menyederhanakan struktur data tanpa kehilangan informasi yang signifikan.s
