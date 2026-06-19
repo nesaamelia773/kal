@@ -643,3 +643,306 @@ A = U \Sigma V^T
 \]
 
 Sehingga informasi pada matriks awal tetap dipertahankan meskipun telah diuraikan ke dalam bentuk yang lebih sederhana. Metode ini sangat bermanfaat dalam berbagai bidang seperti machine learning, analisis data, kompresi citra, dan pemrosesan sinyal karena mampu menyederhanakan struktur data tanpa kehilangan informasi yang signifikan.s
+
+# A. Soal Determinan Matriks 3×3
+
+### Soal 1
+
+Hitung determinan dari matriks berikut:
+
+$A=
+\begin{bmatrix}
+2 & 1 & 3 \\
+0 & 4 & 5 \\
+1 & 2 & 1
+\end{bmatrix}$
+
+### Jawab :
+
+$$A = \begin{bmatrix} 2 & 1 & 3 \\ 0 & 4 & 5 \\ 1 & 2 & 1 \end{bmatrix}$$
+
+Kita dapat menggunakan Aturan Sarrus. Caranya adalah dengan menuliskan kembali dua kolom pertama di sebelah kanan matriks:
+
+$$\det(A) = \begin{vmatrix} 2 & 1 & 3 \\ 0 & 4 & 5 \\ 1 & 2 & 1 \end{vmatrix} \begin{matrix} 2 & 1 \\ 0 & 4 \\ 1 & 2 \end{matrix}$$
+
+1. Jumlah hasil kali diagonal utama:
+
+$(2 \times 4 \times 1) + (1 \times 5 \times 1) + (3 \times 0 \times 2)$$= 8 + 5 + 0 = 13$
+
+2. Jumlah hasil kali diagonal samping:
+
+$(3 \times 4 \times 1) + (2 \times 5 \times 2) + (1 \times 0 \times 1)$$= 12 + 20 + 0 = 32$
+
+3. Menghitung Determinan:
+
+$\det(A) = (\text{Jumlah diagonal utama}) - (\text{Jumlah diagonal samping})$$\det(A) = 13 - 32$$\det(A) = -19$
+
+Jadi, determinan dari matriks $A$ adalah $-19$.
+
+### Soal 2
+
+Tentukan nilai determinan matriks:
+
+$B=
+\begin{bmatrix}
+3 & 2 & 1 \\
+1 & 0 & 4 \\
+2 & 5 & 1
+\end{bmatrix}$
+
+### Jawab :
+
+Untuk matriks $B = \begin{bmatrix} 3 & 2 & 1 \\ 1 & 0 & 4 \\ 2 & 5 & 1 \end{bmatrix}$, kita gunakan Aturan Sarrus:
+
+$$\det(B) = \begin{vmatrix} 3 & 2 & 1 \\ 1 & 0 & 4 \\ 2 & 5 & 1 \end{vmatrix} \begin{matrix} 3 & 2 \\ 1 & 0 \\ 2 & 5 \end{matrix}$$
+
+1. Hasil kali diagonal utama:
+
+$(3 \times 0 \times 1) + (2 \times 4 \times 2) + (1 \times 1 \times 5)$$= 0 + 16 + 5 = 21$
+
+2. Hasil kali diagonal samping:
+
+$(1 \times 0 \times 2) + (3 \times 4 \times 5) + (2 \times 1 \times 1)$$= 0 + 60 + 2 = 62$
+
+3. Nilai Determinan:$\det(B) = 21 - 62 = -41$
+
+Jadi, determinan matriks $B$ adalah $-41$
+
+### Soal 3
+
+Jika
+
+$C=
+\begin{bmatrix}
+1 & 2 & 3 \\
+2 & 4 & 6 \\
+1 & 1 & 1
+\end{bmatrix}$
+
+tentukan Det (C) dan jelaskan apakah matriks tersebut singular atau tidak.
+
+### Jawab : 
+
+Untuk matriks $C = \begin{bmatrix} 1 & 2 & 3 \\ 2 & 4 & 6 \\ 1 & 1 & 1 \end{bmatrix}$:
+
+1. Menghitung $\det(C)$:
+
+$$\det(C) = (1 \times 4 \times 1) + (2 \times 6 \times 1) + (3 \times 2 \times 1) - [(3 \times 4 \times 1) + (1 \times 6 \times 1) + (2 \times 2 \times 1)]$$
+
+$$\det(C) = (4 + 12 + 6) - (12 + 6 + 4)$$
+
+$$\det(C) = 22 - 22 = 0$$
+
+# B. Soal Dekomposisi Matriks (LU Decomposition)
+
+### Soal 4
+
+Lakukan dekomposisi LU terhadap matriks:
+
+$A=
+\begin{bmatrix}
+2 & 4 & 2 \\
+1 & 5 & 2 \\
+1 & 2 & 4
+\end{bmatrix}$
+
+dengan bentuk:
+
+A = LU
+
+di mana L adalah matriks segitiga bawah dan U adalah matriks segitiga atas.
+
+### Jawab :
+
+Matriks $A = \begin{bmatrix} 2 & 4 & 2 \\ 1 & 5 & 2 \\ 1 & 2 & 4 \end{bmatrix}$. 
+
+Kita ingin mencari $A = LU$, di mana $L$ adalah matriks segitiga bawah dengan diagonal utama 1, dan $U$ adalah matriks segitiga atas.
+
+1. Langkah eliminasi (mendapatkan $U$):
+
+Baris 2 dikurangi $\frac{1}{2}$ Baris 1 ($R_2 \to R_2 - 0.5R_1$): $l_{21} = 0.5$$\begin{bmatrix} 2 & 4 & 2 \\ 0 & 3 & 1 \\ 1 & 2 & 4 \end{bmatrix}$
+
+Baris 3 dikurangi $\frac{1}{2}$ Baris 1 ($R_3 \to R_3 - 0.5R_1$): $l_{31} = 0.5$$\begin{bmatrix} 2 & 4 & 2 \\ 0 & 3 & 1 \\ 0 & 0 & 3 \end{bmatrix} = U$
+
+Karena $R_3 - 0.5R_1$ sudah menghasilkan 0 di kolom 2, maka $l_{32} = 0$.
+
+2 .Hasil:$L = \begin{bmatrix} 1 & 0 & 0 \\ 0.5 & 1 & 0 \\ 0.5 & 0 & 1 \end{bmatrix}, \quad U = \begin{bmatrix} 2 & 4 & 2 \\ 0 & 3 & 1 \\ 0 & 0 & 3 \end{bmatrix}$
+
+### Soal 5
+
+Tentukan matriks L dan U dari:
+
+$B=
+\begin{bmatrix}
+1 & 2 & 1 \\
+2 & 5 & 3 \\
+4 & 10 & 8
+\end{bmatrix}$
+
+menggunakan metode eliminasi Gauss.
+
+### Jawab :
+
+Matriks $B=\begin{bmatrix} 1 & 2 & 1 \\ 2 & 5 & 3 \\ 4 & 10 & 8 \end{bmatrix}$
+
+1 .Eliminasi Gauss:
+
+$R_2 \to R_2 - 2R_1$ ($l_{21}=2$): $\begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 1 \\ 4 & 10 & 8 \end{bmatrix}$
+
+$R_3 \to R_3 - 4R_1$ ($l_{31}=4$): $\begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 1 \\ 0 & 2 & 4 \end{bmatrix}$
+
+$R_3 \to R_3 - 2R_2$ ($l_{32}=2$): $\begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix} = U$
+
+2. Hasil:$L = \begin{bmatrix} 1 & 0 & 0 \\ 2 & 1 & 0 \\ 4 & 2 & 1 \end{bmatrix}, \quad U = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 1 \\ 0 & 0 & 2 \end{bmatrix}$
+
+### Soal 6
+
+Dekomposisikan matriks berikut menjadi LU:
+
+$C=
+\begin{bmatrix}
+4 & 2 & 0 \\
+2 & 5 & 1 \\
+0 & 1 & 3
+\end{bmatrix}$
+
+### Jawab :
+
+Matriks $C = \begin{bmatrix} 4 & 2 & 0 \\ 2 & 5 & 1 \\ 0 & 1 & 3 \end{bmatrix}$
+
+1 .Eliminasi Gauss:
+
+$R_2 \to R_2 - 0.5R_1$ ($l_{21}=0.5$): $\begin{bmatrix} 4 & 2 & 0 \\ 0 & 4 & 1 \\ 0 & 1 & 3 \end{bmatrix}$
+
+$R_3 \to R_3 - 0.25R_2$ ($l_{32}=0.25$, $l_{31}=0$): $\begin{bmatrix} 4 & 2 & 0 \\ 0 & 4 & 1 \\ 0 & 0 & 2.75 \end{bmatrix} = U$
+
+2. Hasil:
+
+$L = \begin{bmatrix} 1 & 0 & 0 \\ 0.5 & 1 & 0 \\ 0 & 0.25 & 1 \end{bmatrix}, \quad U = \begin{bmatrix} 4 & 2 & 0 \\ 0 & 4 & 1 \\ 0 & 0 & 2.75 \end{bmatrix}$
+
+# C. Soal Invers Matriks 3×3
+
+### Soal 7
+
+Tentukan invers dari matriks:
+
+$A=
+\begin{bmatrix}
+1 & 2 & 1 \\
+0 & 1 & 1 \\
+2 & 3 & 4
+\end{bmatrix}$
+
+menggunakan metode adjoin atau eliminasi Gauss-Jordan.
+
+### Jawab :
+
+Matriks $A = \begin{bmatrix} 1 & 2 & 1 \\ 0 & 1 & 1 \\ 2 & 3 & 4 \end{bmatrix}$. Menggunakan metode Gauss-Jordan:
+
+1. Augmentasi: 
+
+$[A | I] = \left[ \begin{array}{ccc|ccc} 1 & 2 & 1 & 1 & 0 & 0 \\ 0 & 1 & 1 & 0 & 1 & 0 \\ 2 & 3 & 4 & 0 & 0 & 1 \end{array} \right]$
+
+2. Eliminasi:
+
+$R_3 \to R_3 - 2R_1$: $\left[ \begin{array}{ccc|ccc} 1 & 2 & 1 & 1 & 0 & 0 \\ 0 & 1 & 1 & 0 & 1 & 0 \\ 0 & -1 & 2 & -2 & 0 & 1 \end{array} \right]$
+
+$R_3 \to R_3 + R_2$: $\left[ \begin{array}{ccc|ccc} 1 & 2 & 1 & 1 & 0 & 0 \\ 0 & 1 & 1 & 0 & 1 & 0 \\ 0 & 0 & 3 & -2 & 1 & 1 \end{array} \right]$
+
+$R_3 \to \frac{1}{3}R_3$: $\left[ \begin{array}{ccc|ccc} 1 & 2 & 1 & 1 & 0 & 0 \\ 0 & 1 & 1 & 0 & 1 & 0 \\ 0 & 0 & 1 & -2/3 & 1/3 & 1/3 \end{array} \right]$
+
+Eliminasi ke atas: $R_2 \to R_2 - R_3$ dan $R_1 \to R_1 - R_3$, lalu $R_1 \to R_1 - 2R_2$.
+
+3. Hasil:
+
+$$A^{-1} = \begin{bmatrix} 1/3 & -5/3 & 1/3 \\ 2/3 & 2/3 & -1/3 \\ -2/3 & 1/3 & 1/3 \end{bmatrix}$$
+
+### Soal 8
+
+Carilah invers matriks:
+
+$B=
+\begin{bmatrix}
+2 & 1 & 0 \\
+1 & 2 & 1 \\
+0 & 1 & 2
+\end{bmatrix}$
+
+### Jawab :
+
+Matriks $B = \begin{bmatrix} 2 & 1 & 0 \\ 1 & 2 & 1 \\ 0 & 1 & 2 \end{bmatrix}$
+
+1. Hitung Determinan $|B|$:$|B| = 2(2\cdot2 - 1\cdot1) - 1(1\cdot2 - 0\cdot1) + 0 = 2(3) - 1(2) = 6 - 2 = 4$
+
+2. Hitung Matriks Kofaktor:
+
+$C_{11} = +(4-1) = 3$
+
+$C_{12} = -(2-0) = -2$
+
+$C_{13} = +(1-0) = 1$
+
+$C_{21} = -(2-0) = -2$
+
+$C_{22} = +(4-0) = 4$
+
+$C_{23} = -(2-0) = -2$
+
+$C_{31} = +(1-0) = 1$
+
+$C_{32} = -(2-0) = -2$
+
+$C_{33} = +(4-1) = 3$
+
+Matriks Kofaktor = $\begin{bmatrix} 3 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 3 \end{bmatrix}$
+
+3. Adjoin dan Invers ($B^{-1} = \frac{1}{|B|} \text{adj}(B)$):
+
+$\text{adj}(B)$ adalah transpose dari matriks kofaktor. Karena matriks kofaktor simetris, 
+
+maka $\text{adj}(B) = \begin{bmatrix} 3 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 3 \end{bmatrix}$.$B^{-1} = \frac{1}{4} \begin{bmatrix} 3 & -2 & 1 \\ -2 & 4 & -2 \\ 1 & -2 & 3 \end{bmatrix} = \begin{bmatrix} 0.75 & -0.5 & 0.25 \\ -0.5 & 1 & -0.5 \\ 0.25 & -0.5 & 0.75 \end{bmatrix}$
+
+### Soal 9
+
+Diketahui:
+
+$C=
+\begin{bmatrix}
+3 & 0 & 2 \\
+2 & 0 & -2 \\
+0 & 1 & 1
+\end{bmatrix}$
+
+Tentukan C-1.
+
+### Jawab :
+
+Matriks $C = \begin{bmatrix} 3 & 0 & 2 \\ 2 & 0 & -2 \\ 0 & 1 & 1 \end{bmatrix}$
+
+1. Hitung Determinan $|C|$:Gunakan ekspansi kofaktor pada kolom ke-2:$|C| = -0 + 0 - 1(3(-2) - 2(2)) = -1(-6 - 4) = -1(-10) = 10$
+
+2. Hitung Matriks Kofaktor:
+
+$C_{11} = +(0 - (-2)) = 2$
+
+$C_{12} = -(2 - 0) = -2$
+
+$C_{13} = +(2 - 0) = 2$
+
+$C_{21} = -(0 - 2) = 2$
+
+$C_{22} = +(3 - 0) = 3$
+
+$C_{23} = -(3 - 0) = -3$
+
+$C_{31} = +(0 - 0) = 0$
+
+$C_{32} = -(-6 - 4) = 10$
+
+$C_{33} = +(0 - 0) = 0$
+
+Matriks Kofaktor = $\begin{bmatrix} 2 & -2 & 2 \\ 2 & 3 & -3 \\ 0 & 10 & 0 \end{bmatrix}$
+
+3. Adjoin dan Invers ($C^{-1} = \frac{1}{|C|} \text{adj}(C)$):
+
+$\text{adj}(C) = \begin{bmatrix} 2 & 2 & 0 \\ -2 & 3 & 10 \\ 2 & -3 & 0 \end{bmatrix}$.$C^{-1} = \frac{1}{10} \begin{bmatrix} 2 & 2 & 0 \\ -2 & 3 & 10 \\ 2 & -3 & 0 \end{bmatrix} = \begin{bmatrix} 0.2 & 0.2 & 0 \\ -0.2 & 0.3 & 1 \\ 0.2 & -0.3 & 0 \end{bmatrix}$

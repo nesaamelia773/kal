@@ -451,6 +451,33 @@ document.write(`
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
 </ul>
 </li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-soal-determinan-matriks-33">A. Soal Determinan Matriks 3×3</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawab">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">Soal 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3">Soal 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Jawab :</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b-soal-dekomposisi-matriks-lu-decomposition">B. Soal Dekomposisi Matriks (LU Decomposition)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-4">Soal 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-5">Soal 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-6">Soal 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Jawab :</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#c-soal-invers-matriks-33">C. Soal Invers Matriks 3×3</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-7">Soal 7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-8">Soal 8</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-9">Soal 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Jawab :</a></li>
+</ul>
+</li>
 </ul>
 
             </nav>
@@ -1043,6 +1070,263 @@ A = U \Sigma V^T
 ]</p>
 <p>Sehingga informasi pada matriks awal tetap dipertahankan meskipun telah diuraikan ke dalam bentuk yang lebih sederhana. Metode ini sangat bermanfaat dalam berbagai bidang seperti machine learning, analisis data, kompresi citra, dan pemrosesan sinyal karena mampu menyederhanakan struktur data tanpa kehilangan informasi yang signifikan.s</p>
 </section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="a-soal-determinan-matriks-33">
+<h1>A. Soal Determinan Matriks 3×3<a class="headerlink" href="#a-soal-determinan-matriks-33" title="Link to this heading">#</a></h1>
+<section id="soal-1">
+<h2>Soal 1<a class="headerlink" href="#soal-1" title="Link to this heading">#</a></h2>
+<p>Hitung determinan dari matriks berikut:</p>
+<p><span class="math notranslate nohighlight">\(A=
+\begin{bmatrix}
+2 &amp; 1 &amp; 3 \\
+0 &amp; 4 &amp; 5 \\
+1 &amp; 2 &amp; 1
+\end{bmatrix}\)</span></p>
+</section>
+<section id="jawab">
+<h2>Jawab :<a class="headerlink" href="#jawab" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[\begin{split}A = \begin{bmatrix} 2 &amp; 1 &amp; 3 \\ 0 &amp; 4 &amp; 5 \\ 1 &amp; 2 &amp; 1 \end{bmatrix}\end{split}\]</div>
+<p>Kita dapat menggunakan Aturan Sarrus. Caranya adalah dengan menuliskan kembali dua kolom pertama di sebelah kanan matriks:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det(A) = \begin{vmatrix} 2 &amp; 1 &amp; 3 \\ 0 &amp; 4 &amp; 5 \\ 1 &amp; 2 &amp; 1 \end{vmatrix} \begin{matrix} 2 &amp; 1 \\ 0 &amp; 4 \\ 1 &amp; 2 \end{matrix}\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>Jumlah hasil kali diagonal utama:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\((2 \times 4 \times 1) + (1 \times 5 \times 1) + (3 \times 0 \times 2)\)</span><span class="math notranslate nohighlight">\(= 8 + 5 + 0 = 13\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Jumlah hasil kali diagonal samping:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\((3 \times 4 \times 1) + (2 \times 5 \times 2) + (1 \times 0 \times 1)\)</span><span class="math notranslate nohighlight">\(= 12 + 20 + 0 = 32\)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>Menghitung Determinan:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(\det(A) = (\text{Jumlah diagonal utama}) - (\text{Jumlah diagonal samping})\)</span><span class="math notranslate nohighlight">\(\det(A) = 13 - 32\)</span><span class="math notranslate nohighlight">\(\det(A) = -19\)</span></p>
+<p>Jadi, determinan dari matriks <span class="math notranslate nohighlight">\(A\)</span> adalah <span class="math notranslate nohighlight">\(-19\)</span>.</p>
+</section>
+<section id="soal-2">
+<h2>Soal 2<a class="headerlink" href="#soal-2" title="Link to this heading">#</a></h2>
+<p>Tentukan nilai determinan matriks:</p>
+<p><span class="math notranslate nohighlight">\(B=
+\begin{bmatrix}
+3 &amp; 2 &amp; 1 \\
+1 &amp; 0 &amp; 4 \\
+2 &amp; 5 &amp; 1
+\end{bmatrix}\)</span></p>
+</section>
+<section id="id6">
+<h2>Jawab :<a class="headerlink" href="#id6" title="Link to this heading">#</a></h2>
+<p>Untuk matriks <span class="math notranslate nohighlight">\(B = \begin{bmatrix} 3 &amp; 2 &amp; 1 \\ 1 &amp; 0 &amp; 4 \\ 2 &amp; 5 &amp; 1 \end{bmatrix}\)</span>, kita gunakan Aturan Sarrus:</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\det(B) = \begin{vmatrix} 3 &amp; 2 &amp; 1 \\ 1 &amp; 0 &amp; 4 \\ 2 &amp; 5 &amp; 1 \end{vmatrix} \begin{matrix} 3 &amp; 2 \\ 1 &amp; 0 \\ 2 &amp; 5 \end{matrix}\end{split}\]</div>
+<ol class="arabic simple">
+<li><p>Hasil kali diagonal utama:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\((3 \times 0 \times 1) + (2 \times 4 \times 2) + (1 \times 1 \times 5)\)</span><span class="math notranslate nohighlight">\(= 0 + 16 + 5 = 21\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Hasil kali diagonal samping:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\((1 \times 0 \times 2) + (3 \times 4 \times 5) + (2 \times 1 \times 1)\)</span><span class="math notranslate nohighlight">\(= 0 + 60 + 2 = 62\)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>Nilai Determinan:<span class="math notranslate nohighlight">\(\det(B) = 21 - 62 = -41\)</span></p></li>
+</ol>
+<p>Jadi, determinan matriks <span class="math notranslate nohighlight">\(B\)</span> adalah <span class="math notranslate nohighlight">\(-41\)</span></p>
+</section>
+<section id="soal-3">
+<h2>Soal 3<a class="headerlink" href="#soal-3" title="Link to this heading">#</a></h2>
+<p>Jika</p>
+<p><span class="math notranslate nohighlight">\(C=
+\begin{bmatrix}
+1 &amp; 2 &amp; 3 \\
+2 &amp; 4 &amp; 6 \\
+1 &amp; 1 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>tentukan Det (C) dan jelaskan apakah matriks tersebut singular atau tidak.</p>
+</section>
+<section id="id7">
+<h2>Jawab :<a class="headerlink" href="#id7" title="Link to this heading">#</a></h2>
+<p>Untuk matriks <span class="math notranslate nohighlight">\(C = \begin{bmatrix} 1 &amp; 2 &amp; 3 \\ 2 &amp; 4 &amp; 6 \\ 1 &amp; 1 &amp; 1 \end{bmatrix}\)</span>:</p>
+<ol class="arabic simple">
+<li><p>Menghitung <span class="math notranslate nohighlight">\(\det(C)\)</span>:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\det(C) = (1 \times 4 \times 1) + (2 \times 6 \times 1) + (3 \times 2 \times 1) - [(3 \times 4 \times 1) + (1 \times 6 \times 1) + (2 \times 2 \times 1)]\]</div>
+<div class="math notranslate nohighlight">
+\[\det(C) = (4 + 12 + 6) - (12 + 6 + 4)\]</div>
+<div class="math notranslate nohighlight">
+\[\det(C) = 22 - 22 = 0\]</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="b-soal-dekomposisi-matriks-lu-decomposition">
+<h1>B. Soal Dekomposisi Matriks (LU Decomposition)<a class="headerlink" href="#b-soal-dekomposisi-matriks-lu-decomposition" title="Link to this heading">#</a></h1>
+<section id="soal-4">
+<h2>Soal 4<a class="headerlink" href="#soal-4" title="Link to this heading">#</a></h2>
+<p>Lakukan dekomposisi LU terhadap matriks:</p>
+<p><span class="math notranslate nohighlight">\(A=
+\begin{bmatrix}
+2 &amp; 4 &amp; 2 \\
+1 &amp; 5 &amp; 2 \\
+1 &amp; 2 &amp; 4
+\end{bmatrix}\)</span></p>
+<p>dengan bentuk:</p>
+<p>A = LU</p>
+<p>di mana L adalah matriks segitiga bawah dan U adalah matriks segitiga atas.</p>
+</section>
+<section id="id8">
+<h2>Jawab :<a class="headerlink" href="#id8" title="Link to this heading">#</a></h2>
+<p>Matriks <span class="math notranslate nohighlight">\(A = \begin{bmatrix} 2 &amp; 4 &amp; 2 \\ 1 &amp; 5 &amp; 2 \\ 1 &amp; 2 &amp; 4 \end{bmatrix}\)</span>.</p>
+<p>Kita ingin mencari <span class="math notranslate nohighlight">\(A = LU\)</span>, di mana <span class="math notranslate nohighlight">\(L\)</span> adalah matriks segitiga bawah dengan diagonal utama 1, dan <span class="math notranslate nohighlight">\(U\)</span> adalah matriks segitiga atas.</p>
+<ol class="arabic simple">
+<li><p>Langkah eliminasi (mendapatkan <span class="math notranslate nohighlight">\(U\)</span>):</p></li>
+</ol>
+<p>Baris 2 dikurangi <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> Baris 1 (<span class="math notranslate nohighlight">\(R_2 \to R_2 - 0.5R_1\)</span>): <span class="math notranslate nohighlight">\(l_{21} = 0.5\)</span><span class="math notranslate nohighlight">\(\begin{bmatrix} 2 &amp; 4 &amp; 2 \\ 0 &amp; 3 &amp; 1 \\ 1 &amp; 2 &amp; 4 \end{bmatrix}\)</span></p>
+<p>Baris 3 dikurangi <span class="math notranslate nohighlight">\(\frac{1}{2}\)</span> Baris 1 (<span class="math notranslate nohighlight">\(R_3 \to R_3 - 0.5R_1\)</span>): <span class="math notranslate nohighlight">\(l_{31} = 0.5\)</span><span class="math notranslate nohighlight">\(\begin{bmatrix} 2 &amp; 4 &amp; 2 \\ 0 &amp; 3 &amp; 1 \\ 0 &amp; 0 &amp; 3 \end{bmatrix} = U\)</span></p>
+<p>Karena <span class="math notranslate nohighlight">\(R_3 - 0.5R_1\)</span> sudah menghasilkan 0 di kolom 2, maka <span class="math notranslate nohighlight">\(l_{32} = 0\)</span>.</p>
+<p>2 .Hasil:<span class="math notranslate nohighlight">\(L = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0.5 &amp; 1 &amp; 0 \\ 0.5 &amp; 0 &amp; 1 \end{bmatrix}, \quad U = \begin{bmatrix} 2 &amp; 4 &amp; 2 \\ 0 &amp; 3 &amp; 1 \\ 0 &amp; 0 &amp; 3 \end{bmatrix}\)</span></p>
+</section>
+<section id="soal-5">
+<h2>Soal 5<a class="headerlink" href="#soal-5" title="Link to this heading">#</a></h2>
+<p>Tentukan matriks L dan U dari:</p>
+<p><span class="math notranslate nohighlight">\(B=
+\begin{bmatrix}
+1 &amp; 2 &amp; 1 \\
+2 &amp; 5 &amp; 3 \\
+4 &amp; 10 &amp; 8
+\end{bmatrix}\)</span></p>
+<p>menggunakan metode eliminasi Gauss.</p>
+</section>
+<section id="id9">
+<h2>Jawab :<a class="headerlink" href="#id9" title="Link to this heading">#</a></h2>
+<p>Matriks <span class="math notranslate nohighlight">\(B=\begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 2 &amp; 5 &amp; 3 \\ 4 &amp; 10 &amp; 8 \end{bmatrix}\)</span></p>
+<p>1 .Eliminasi Gauss:</p>
+<p><span class="math notranslate nohighlight">\(R_2 \to R_2 - 2R_1\)</span> (<span class="math notranslate nohighlight">\(l_{21}=2\)</span>): <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; 1 \\ 4 &amp; 10 &amp; 8 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \to R_3 - 4R_1\)</span> (<span class="math notranslate nohighlight">\(l_{31}=4\)</span>): <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; 1 \\ 0 &amp; 2 &amp; 4 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \to R_3 - 2R_2\)</span> (<span class="math notranslate nohighlight">\(l_{32}=2\)</span>): <span class="math notranslate nohighlight">\(\begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 2 \end{bmatrix} = U\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Hasil:<span class="math notranslate nohighlight">\(L = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 2 &amp; 1 &amp; 0 \\ 4 &amp; 2 &amp; 1 \end{bmatrix}, \quad U = \begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; 1 \\ 0 &amp; 0 &amp; 2 \end{bmatrix}\)</span></p></li>
+</ol>
+</section>
+<section id="soal-6">
+<h2>Soal 6<a class="headerlink" href="#soal-6" title="Link to this heading">#</a></h2>
+<p>Dekomposisikan matriks berikut menjadi LU:</p>
+<p><span class="math notranslate nohighlight">\(C=
+\begin{bmatrix}
+4 &amp; 2 &amp; 0 \\
+2 &amp; 5 &amp; 1 \\
+0 &amp; 1 &amp; 3
+\end{bmatrix}\)</span></p>
+</section>
+<section id="id10">
+<h2>Jawab :<a class="headerlink" href="#id10" title="Link to this heading">#</a></h2>
+<p>Matriks <span class="math notranslate nohighlight">\(C = \begin{bmatrix} 4 &amp; 2 &amp; 0 \\ 2 &amp; 5 &amp; 1 \\ 0 &amp; 1 &amp; 3 \end{bmatrix}\)</span></p>
+<p>1 .Eliminasi Gauss:</p>
+<p><span class="math notranslate nohighlight">\(R_2 \to R_2 - 0.5R_1\)</span> (<span class="math notranslate nohighlight">\(l_{21}=0.5\)</span>): <span class="math notranslate nohighlight">\(\begin{bmatrix} 4 &amp; 2 &amp; 0 \\ 0 &amp; 4 &amp; 1 \\ 0 &amp; 1 &amp; 3 \end{bmatrix}\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \to R_3 - 0.25R_2\)</span> (<span class="math notranslate nohighlight">\(l_{32}=0.25\)</span>, <span class="math notranslate nohighlight">\(l_{31}=0\)</span>): <span class="math notranslate nohighlight">\(\begin{bmatrix} 4 &amp; 2 &amp; 0 \\ 0 &amp; 4 &amp; 1 \\ 0 &amp; 0 &amp; 2.75 \end{bmatrix} = U\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Hasil:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(L = \begin{bmatrix} 1 &amp; 0 &amp; 0 \\ 0.5 &amp; 1 &amp; 0 \\ 0 &amp; 0.25 &amp; 1 \end{bmatrix}, \quad U = \begin{bmatrix} 4 &amp; 2 &amp; 0 \\ 0 &amp; 4 &amp; 1 \\ 0 &amp; 0 &amp; 2.75 \end{bmatrix}\)</span></p>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="c-soal-invers-matriks-33">
+<h1>C. Soal Invers Matriks 3×3<a class="headerlink" href="#c-soal-invers-matriks-33" title="Link to this heading">#</a></h1>
+<section id="soal-7">
+<h2>Soal 7<a class="headerlink" href="#soal-7" title="Link to this heading">#</a></h2>
+<p>Tentukan invers dari matriks:</p>
+<p><span class="math notranslate nohighlight">\(A=
+\begin{bmatrix}
+1 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 1 \\
+2 &amp; 3 &amp; 4
+\end{bmatrix}\)</span></p>
+<p>menggunakan metode adjoin atau eliminasi Gauss-Jordan.</p>
+</section>
+<section id="id11">
+<h2>Jawab :<a class="headerlink" href="#id11" title="Link to this heading">#</a></h2>
+<p>Matriks <span class="math notranslate nohighlight">\(A = \begin{bmatrix} 1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; 1 \\ 2 &amp; 3 &amp; 4 \end{bmatrix}\)</span>. Menggunakan metode Gauss-Jordan:</p>
+<ol class="arabic simple">
+<li><p>Augmentasi:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\([A | I] = \left[ \begin{array}{ccc|ccc} 1 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\ 2 &amp; 3 &amp; 4 &amp; 0 &amp; 0 &amp; 1 \end{array} \right]\)</span></p>
+<ol class="arabic simple" start="2">
+<li><p>Eliminasi:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(R_3 \to R_3 - 2R_1\)</span>: <span class="math notranslate nohighlight">\(\left[ \begin{array}{ccc|ccc} 1 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; -1 &amp; 2 &amp; -2 &amp; 0 &amp; 1 \end{array} \right]\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \to R_3 + R_2\)</span>: <span class="math notranslate nohighlight">\(\left[ \begin{array}{ccc|ccc} 1 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 3 &amp; -2 &amp; 1 &amp; 1 \end{array} \right]\)</span></p>
+<p><span class="math notranslate nohighlight">\(R_3 \to \frac{1}{3}R_3\)</span>: <span class="math notranslate nohighlight">\(\left[ \begin{array}{ccc|ccc} 1 &amp; 2 &amp; 1 &amp; 1 &amp; 0 &amp; 0 \\ 0 &amp; 1 &amp; 1 &amp; 0 &amp; 1 &amp; 0 \\ 0 &amp; 0 &amp; 1 &amp; -2/3 &amp; 1/3 &amp; 1/3 \end{array} \right]\)</span></p>
+<p>Eliminasi ke atas: <span class="math notranslate nohighlight">\(R_2 \to R_2 - R_3\)</span> dan <span class="math notranslate nohighlight">\(R_1 \to R_1 - R_3\)</span>, lalu <span class="math notranslate nohighlight">\(R_1 \to R_1 - 2R_2\)</span>.</p>
+<ol class="arabic simple" start="3">
+<li><p>Hasil:</p></li>
+</ol>
+<div class="math notranslate nohighlight">
+\[\begin{split}A^{-1} = \begin{bmatrix} 1/3 &amp; -5/3 &amp; 1/3 \\ 2/3 &amp; 2/3 &amp; -1/3 \\ -2/3 &amp; 1/3 &amp; 1/3 \end{bmatrix}\end{split}\]</div>
+</section>
+<section id="soal-8">
+<h2>Soal 8<a class="headerlink" href="#soal-8" title="Link to this heading">#</a></h2>
+<p>Carilah invers matriks:</p>
+<p><span class="math notranslate nohighlight">\(B=
+\begin{bmatrix}
+2 &amp; 1 &amp; 0 \\
+1 &amp; 2 &amp; 1 \\
+0 &amp; 1 &amp; 2
+\end{bmatrix}\)</span></p>
+</section>
+<section id="id12">
+<h2>Jawab :<a class="headerlink" href="#id12" title="Link to this heading">#</a></h2>
+<p>Matriks <span class="math notranslate nohighlight">\(B = \begin{bmatrix} 2 &amp; 1 &amp; 0 \\ 1 &amp; 2 &amp; 1 \\ 0 &amp; 1 &amp; 2 \end{bmatrix}\)</span></p>
+<ol class="arabic simple">
+<li><p>Hitung Determinan <span class="math notranslate nohighlight">\(|B|\)</span>:<span class="math notranslate nohighlight">\(|B| = 2(2\cdot2 - 1\cdot1) - 1(1\cdot2 - 0\cdot1) + 0 = 2(3) - 1(2) = 6 - 2 = 4\)</span></p></li>
+<li><p>Hitung Matriks Kofaktor:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(C_{11} = +(4-1) = 3\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{12} = -(2-0) = -2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{13} = +(1-0) = 1\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{21} = -(2-0) = -2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{22} = +(4-0) = 4\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{23} = -(2-0) = -2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{31} = +(1-0) = 1\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{32} = -(2-0) = -2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{33} = +(4-1) = 3\)</span></p>
+<p>Matriks Kofaktor = <span class="math notranslate nohighlight">\(\begin{bmatrix} 3 &amp; -2 &amp; 1 \\ -2 &amp; 4 &amp; -2 \\ 1 &amp; -2 &amp; 3 \end{bmatrix}\)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>Adjoin dan Invers (<span class="math notranslate nohighlight">\(B^{-1} = \frac{1}{|B|} \text{adj}(B)\)</span>):</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(\text{adj}(B)\)</span> adalah transpose dari matriks kofaktor. Karena matriks kofaktor simetris,</p>
+<p>maka <span class="math notranslate nohighlight">\(\text{adj}(B) = \begin{bmatrix} 3 &amp; -2 &amp; 1 \\ -2 &amp; 4 &amp; -2 \\ 1 &amp; -2 &amp; 3 \end{bmatrix}\)</span>.<span class="math notranslate nohighlight">\(B^{-1} = \frac{1}{4} \begin{bmatrix} 3 &amp; -2 &amp; 1 \\ -2 &amp; 4 &amp; -2 \\ 1 &amp; -2 &amp; 3 \end{bmatrix} = \begin{bmatrix} 0.75 &amp; -0.5 &amp; 0.25 \\ -0.5 &amp; 1 &amp; -0.5 \\ 0.25 &amp; -0.5 &amp; 0.75 \end{bmatrix}\)</span></p>
+</section>
+<section id="soal-9">
+<h2>Soal 9<a class="headerlink" href="#soal-9" title="Link to this heading">#</a></h2>
+<p>Diketahui:</p>
+<p><span class="math notranslate nohighlight">\(C=
+\begin{bmatrix}
+3 &amp; 0 &amp; 2 \\
+2 &amp; 0 &amp; -2 \\
+0 &amp; 1 &amp; 1
+\end{bmatrix}\)</span></p>
+<p>Tentukan C-1.</p>
+</section>
+<section id="id13">
+<h2>Jawab :<a class="headerlink" href="#id13" title="Link to this heading">#</a></h2>
+<p>Matriks <span class="math notranslate nohighlight">\(C = \begin{bmatrix} 3 &amp; 0 &amp; 2 \\ 2 &amp; 0 &amp; -2 \\ 0 &amp; 1 &amp; 1 \end{bmatrix}\)</span></p>
+<ol class="arabic simple">
+<li><p>Hitung Determinan <span class="math notranslate nohighlight">\(|C|\)</span>:Gunakan ekspansi kofaktor pada kolom ke-2:<span class="math notranslate nohighlight">\(|C| = -0 + 0 - 1(3(-2) - 2(2)) = -1(-6 - 4) = -1(-10) = 10\)</span></p></li>
+<li><p>Hitung Matriks Kofaktor:</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(C_{11} = +(0 - (-2)) = 2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{12} = -(2 - 0) = -2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{13} = +(2 - 0) = 2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{21} = -(0 - 2) = 2\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{22} = +(3 - 0) = 3\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{23} = -(3 - 0) = -3\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{31} = +(0 - 0) = 0\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{32} = -(-6 - 4) = 10\)</span></p>
+<p><span class="math notranslate nohighlight">\(C_{33} = +(0 - 0) = 0\)</span></p>
+<p>Matriks Kofaktor = <span class="math notranslate nohighlight">\(\begin{bmatrix} 2 &amp; -2 &amp; 2 \\ 2 &amp; 3 &amp; -3 \\ 0 &amp; 10 &amp; 0 \end{bmatrix}\)</span></p>
+<ol class="arabic simple" start="3">
+<li><p>Adjoin dan Invers (<span class="math notranslate nohighlight">\(C^{-1} = \frac{1}{|C|} \text{adj}(C)\)</span>):</p></li>
+</ol>
+<p><span class="math notranslate nohighlight">\(\text{adj}(C) = \begin{bmatrix} 2 &amp; 2 &amp; 0 \\ -2 &amp; 3 &amp; 10 \\ 2 &amp; -3 &amp; 0 \end{bmatrix}\)</span>.<span class="math notranslate nohighlight">\(C^{-1} = \frac{1}{10} \begin{bmatrix} 2 &amp; 2 &amp; 0 \\ -2 &amp; 3 &amp; 10 \\ 2 &amp; -3 &amp; 0 \end{bmatrix} = \begin{bmatrix} 0.2 &amp; 0.2 &amp; 0 \\ -0.2 &amp; 0.3 &amp; 1 \\ 0.2 &amp; -0.3 &amp; 0 \end{bmatrix}\)</span></p>
+</section>
 <div class="toctree-wrapper compound">
 </div>
 </section>
@@ -1143,6 +1427,33 @@ A = U \Sigma V^T
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contoh-matriks">Contoh Matriks</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implementasi-dengan-sagemathcell">Implementasi dengan SageMathCell</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#kesimpulan">Kesimpulan</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#a-soal-determinan-matriks-33">A. Soal Determinan Matriks 3×3</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-1">Soal 1</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#jawab">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-2">Soal 2</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id6">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-3">Soal 3</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id7">Jawab :</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#b-soal-dekomposisi-matriks-lu-decomposition">B. Soal Dekomposisi Matriks (LU Decomposition)</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-4">Soal 4</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id8">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-5">Soal 5</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id9">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-6">Soal 6</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id10">Jawab :</a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#c-soal-invers-matriks-33">C. Soal Invers Matriks 3×3</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-7">Soal 7</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id11">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-8">Soal 8</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id12">Jawab :</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#soal-9">Soal 9</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#id13">Jawab :</a></li>
 </ul>
 </li>
 </ul>
